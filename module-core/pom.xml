@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.prima</groupId>
+        <artifactId>kuntur-oci</artifactId>
+        <version>17.0.0</version>
+    </parent>
+
+    <artifactId>module-core</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Dependencias para OCI-->
+        <!-- Núcleo del SDK de Oracle Cloud Infrastructure que contiene las clases necesarias para interactuar con los servicios principales de OCI -->
+        <dependency>
+            <groupId>com.oracle.oci.sdk</groupId>
+            <artifactId>oci-java-sdk-core</artifactId>
+            <version>3.55.1</version>
+        </dependency>
+        <!-- Para funcionalidades básicas y comunes necesarias para interactuar con los servicios de OCI, como autenticación y configuración -->
+        <dependency>
+            <groupId>com.oracle.oci.sdk</groupId>
+            <artifactId>oci-java-sdk-common</artifactId>
+            <version>3.55.1</version>
+        </dependency>
+        <!-- Para interactuar con Object Storage de OCI para almacenar y recuperar objetos (archivos, imágenes, etc.) -->
+        <dependency>
+            <groupId>com.oracle.oci.sdk</groupId>
+            <artifactId>oci-java-sdk-objectstorage</artifactId>
+            <version>3.55.1</version>
+        </dependency>
+        <!-- Para gestionar recursos relacionados con la gestión de identidad (como usuarios, grupos, políticas, etc.) -->
+        <dependency>
+            <groupId>com.oracle.oci.sdk</groupId>
+            <artifactId>oci-java-sdk-identity</artifactId>
+            <version>3.55.1</version>
+        </dependency>
+        <!-- Servicio de Logging de OCI para gestionar logs -->
+        <dependency>
+            <groupId>com.oracle.oci.sdk</groupId>
+            <artifactId>oci-java-sdk-logging</artifactId>
+            <version>3.55.1</version>
+        </dependency>
+    </dependencies>
+
+</project>

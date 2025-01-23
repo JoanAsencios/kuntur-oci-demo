@@ -11,6 +11,7 @@
 	<groupId>com.prima</groupId>
 	<artifactId>kuntur-oci</artifactId>
 	<version>17.0.0</version>
+	<packaging>pom</packaging>
 	<name>kuntur-oci</name>
 	<description>Kuntur 17 OCI</description>
 	<url/>
@@ -20,6 +21,11 @@
 	<developers>
 		<developer/>
 	</developers>
+	<modules>
+		<module>module-core</module>
+		<module>module-bd</module>
+		<module>module-util</module>
+	</modules>
 	<scm>
 		<connection/>
 		<developerConnection/>
@@ -37,72 +43,15 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc11</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-
-		<!-- Dependencia para conectarse a Oracle DB utilizando JDBC y JPA -->
-		<dependency>
-			<groupId>javax.persistence</groupId>
-			<artifactId>javax.persistence-api</artifactId>
-			<version>2.2</version>
-		</dependency>
-
-		<!-- Dependencia para usar SLF4J, útil para OCI SDK y Oracle JDBC -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.32</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>1.7.32</version>
 		</dependency>
 
 		<!-- Dependencia para el uso de Spring Boot y servicios RESTful  -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<!-- Dependencias para OCI-->
-		<!-- Núcleo del SDK de Oracle Cloud Infrastructure que contiene las clases necesarias para interactuar con los servicios principales de OCI -->
-		<dependency>
-			<groupId>com.oracle.oci.sdk</groupId>
-			<artifactId>oci-java-sdk-core</artifactId>
-			<version>3.55.1</version>
-		</dependency>
-		<!-- Para funcionalidades básicas y comunes necesarias para interactuar con los servicios de OCI, como autenticación y configuración -->
-		<dependency>
-			<groupId>com.oracle.oci.sdk</groupId>
-			<artifactId>oci-java-sdk-common</artifactId>
-			<version>3.55.1</version>
-		</dependency>
-		<!-- Para interactuar con Object Storage de OCI para almacenar y recuperar objetos (archivos, imágenes, etc.) -->
-		<dependency>
-			<groupId>com.oracle.oci.sdk</groupId>
-			<artifactId>oci-java-sdk-objectstorage</artifactId>
-			<version>3.55.1</version>
-		</dependency>
-		<!-- Para gestionar recursos relacionados con la gestión de identidad (como usuarios, grupos, políticas, etc.) -->
-		<dependency>
-			<groupId>com.oracle.oci.sdk</groupId>
-			<artifactId>oci-java-sdk-identity</artifactId>
-			<version>3.55.1</version>
-		</dependency>
-		<!-- Servicio de Logging de OCI para gestionar logs -->
-		<dependency>
-			<groupId>com.oracle.oci.sdk</groupId>
-			<artifactId>oci-java-sdk-logging</artifactId>
-			<version>3.55.1</version>
 		</dependency>
 
 	</dependencies>
