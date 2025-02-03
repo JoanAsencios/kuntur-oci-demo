@@ -35,7 +35,7 @@
         <dependency>
             <groupId>com.oracle.oci.sdk</groupId>
             <artifactId>oci-java-sdk-objectstorage</artifactId>
-            <version>3.55.3</version>
+            <version>3.56.0</version>
         </dependency>
         <!-- Para gestionar recursos relacionados con la gestión de identidad (como usuarios, grupos, políticas, etc.) -->
         <dependency>
