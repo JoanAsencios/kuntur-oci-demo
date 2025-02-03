@@ -29,7 +29,7 @@
         <dependency>
             <groupId>com.oracle.oci.sdk</groupId>
             <artifactId>oci-java-sdk-common</artifactId>
-            <version>3.55.3</version>
+            <version>3.56.0</version>
         </dependency>
         <!-- Para interactuar con Object Storage de OCI para almacenar y recuperar objetos (archivos, imágenes, etc.) -->
         <dependency>
