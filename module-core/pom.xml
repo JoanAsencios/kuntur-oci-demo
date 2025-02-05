@@ -41,7 +41,7 @@
         <dependency>
             <groupId>com.oracle.oci.sdk</groupId>
             <artifactId>oci-java-sdk-identity</artifactId>
-            <version>3.55.3</version>
+            <version>3.57.0</version>
         </dependency>
         <!-- Servicio de Logging de OCI para gestionar logs -->
         <dependency>
